@@ -1,0 +1,12 @@
+name: Evilthyeggman created this
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail the job
+        run: exit 1
