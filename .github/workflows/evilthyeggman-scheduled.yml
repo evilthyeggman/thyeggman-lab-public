@@ -1,8 +1,10 @@
 name: Evilthyeggman scheduled this
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'
+  workflow_dispatch:
+  # Uncomment these lines to test scheduled workflow notifications
+  #schedule:
+  # - cron: '*/5 * * * *'
 
 jobs:
   build:
