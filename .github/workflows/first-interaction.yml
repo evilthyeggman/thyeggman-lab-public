@@ -1,0 +1,12 @@
+name: first-interaction
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: thyeggman/first-interaction@latest
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: "Thanks for making an issue!"
+          pr-message: "Hey, it's your first PR, hI!"
